@@ -25,6 +25,9 @@ namespace ExamApp
         {
             try
             {
+                if (!File.Exists(file))
+                    return;
+
                 string[] lines = File.ReadAllLines(file);
                 string concatenatedText = string.Join(Environment.NewLine, lines);
                 label.Text = concatenatedText;

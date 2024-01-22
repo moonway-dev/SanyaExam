@@ -20,6 +20,7 @@ namespace ExamApp
         public SettingsData() {
             SetNewPath(AppDomain.CurrentDomain.BaseDirectory);
             SetHideToTray(false);
+            GenerateNewGuids();
         }
 
         public string GetKeysFile()
